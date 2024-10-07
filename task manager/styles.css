@@ -1,0 +1,186 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a:hover {
+    color: #ff6b6b;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ff6b6b;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info span {
+    margin-left: 10px;
+    font-weight: 400;
+    color: #555;
+}
+
+.analytics {
+    margin-top: 30px;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-item {
+    background-color: #ffefef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+.chart-item h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.chart-filters {
+    margin-top: 20px;
+}
+
+.chart-filters label {
+    margin-right: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+.attendance-report {
+    margin-top: 30px;
+}
+
+.attendance-report h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.report-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.report-controls input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.report-controls button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #ffdadb;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    font-weight: 600;
+}
+
+table tbody tr:hover {
+    background-color: #ffefef;
+}
+
+table button {
+    background-color: #ff6b6b;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table button:hover {
+    background-color: #e55b5b;
+}

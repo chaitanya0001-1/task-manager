@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.min.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid/main.min.js'></script>
+<script src="main.js"></script>
+
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Dashboard</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="#">&#x1F4C5; Dashboard</a>
+                <a href="#">&#x1F4D1; Reports</a>
+                <a href="#">&#x1F464; Students</a>
+                <a href="#">&#x1F4C6; Calendar</a>
+                <a href="#">&#x1F4B0; Fees</a>
+                <a href="#">&#x1F4DD; Settings</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="user-info">
+                    <span>Admin</span>
+                    <span>abc@admin.ac.in</span>
+                </div>
+            </header>
+
+            <section class="dashboard-overview">
+                <div class="card time">
+                    <p>8:02:09 AM</p>
+                    <p>Realtime Insight</p>
+                    <p>Today: 2nd August 2023</p>
+                </div>
+                <div class="card students">
+                    <h3>452</h3>
+                    <p>Total Students</p>
+                </div>
+                <div class="card present">
+                    <h3>375</h3>
+                    <p>Present</p>
+                </div>
+                <div class="card absent">
+                    <h3>77</h3>
+                    <p>Absent</p>
+                </div>
+                <div class="card late">
+                    <h3>59</h3>
+                    <p>Late Arrivals</p>
+                </div>
+            </section>
+
+            <section class="notifications">
+                <h4>Notifications & Remainders</h4>
+                <p>Tomorrow Holiday - Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+            </section>
+
+            <section class="calendar">
+                <h4>Calendar</h4>
+                <p>August 2023</p>
+                <!-- Add a calendar component or an image of a calendar here -->
+            </section>
+        </main>
+    </div>
+    <div id="calendar"></div>
+
+</body>
+</html>

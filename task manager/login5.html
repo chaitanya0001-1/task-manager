@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System - Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <canvas id="attendanceChart" width="400" height="200"></canvas>
+<canvas id="dailyAttendanceChart" width="400" height="200"></canvas>
+
+
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Timetable</a></li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Analytics</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Analytics</h1>
+                <div class="user-info">
+                    <img src="user-profile.jpg" alt="User Avatar">
+                    <span>Admin</span>
+                    <span>abc@admin.ac.in</span>
+                </div>
+            </header>
+
+            <section class="analytics">
+                <div class="charts">
+                    <div class="chart-item">
+                        <h2>Attendance Comparison Chart</h2>
+                        <canvas id="attendanceChart"></canvas>
+                        <div class="chart-filters">
+                            <label><input type="radio" name="chart-filter" value="daily" checked> Daily</label>
+                            <label><input type="radio" name="chart-filter" value="weekly"> Weekly</label>
+                            <label><input type="radio" name="chart-filter" value="monthly"> Monthly</label>
+                        </div>
+                    </div>
+                    <div class="chart-item">
+                        <h2>Daily Attendance</h2>
+                        <canvas id="dailyAttendanceChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="attendance-report">
+                    <h2>Attendance Report</h2>
+                    <div class="report-controls">
+                        <input type="date" id="reportDate">
+                        <button id="exportBtn">Export</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Subject Name</th>
+                                <th>No. of Present</th>
+                                <th>No. of Absent</th>
+                                <th>Status</th>
+                                <th>Edit</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will go here -->
+                            <tr>
+                                <td>I B.Sc (CS)</td>
+    
